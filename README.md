@@ -1,6 +1,6 @@
 # android-rx-location
 
-I create this repo for [this topic](https://medium.com/p/976874ebc4f0/edit). **"Converting Android callback API to Rxjava stream"**.
+I create this repo for [this topic](https://medium.com/@mikenguyenvan/it-is-2020-i-still-write-a-topic-about-converting-android-callback-api-to-rxjava-stream-976874ebc4f0). **"Converting Android callback API to Rxjava stream"**.
 It explains how the library is implemented.
 
 This library converts the location API from Android LocationManager & Google Play Service to RxJava stream.
