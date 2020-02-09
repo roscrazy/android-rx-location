@@ -22,11 +22,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         rxLocationManagerWithMultipleSubscriber()
+//        singleLocation()
 //        rxLocationManagerWithOtherThread()
     }
 
     private fun rxLocationManagerWithMultipleSubscriber() {
-        singleLocation()
         for (i in 1..3) {
             observeLocationChange(i)
         }
@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun observeLocationChangeFromOtherThread() {
         // Just a sample handler thread, don't do this in your project
+        // Present how to tell the observable to emit the item to a background thread
         val thread = HandlerThread("YourHandlerThread")
         thread.start()
         disposables.add(

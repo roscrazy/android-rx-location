@@ -19,3 +19,4 @@ sealed class Priority {
     object BalancePower : Priority()
     object NoPower : Priority()
 }
+
